@@ -1,0 +1,7 @@
+parameters:
+#    forte_user.example.class: Forte\UserBundle\Example
+
+services:
+#    forte_user.example:
+#        class: %forte_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

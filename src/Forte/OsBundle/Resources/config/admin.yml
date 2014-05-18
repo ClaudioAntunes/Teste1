@@ -1,0 +1,34 @@
+parameters:
+#    forte_os.example.class: Forte\OsBundle\Example
+
+services:
+#    forte_os.example:
+#        class: %forte_os.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+
+# Forte/OsBundle/Resources/config/admin.yml
+services:
+    sonata.admin.reparo:
+        class: Forte\OsBundle\Admin\ReparoAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Dados", label: "Reparo" }
+        arguments:
+            - ~
+            - Forte\OsBundle\Entity\Reparo
+            - ~
+        calls:
+            - [ setTranslationDomain, [ForteOsBundle]]
+            
+# Forte/OsBundle/Resources/config/admin.yml
+
+    sonata.admin.os:
+        class: Forte\OsBundle\Admin\OsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Ordem de Serviço", label: "Os" }
+        arguments:
+            - ~
+            - Forte\OsBundle\Entity\Os
+            - ~
+        calls:
+            - [ setTranslationDomain, [ForteOsBundle]]            

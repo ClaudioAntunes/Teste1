@@ -1,0 +1,30 @@
+situacao:
+    pattern:  /
+    defaults: { _controller: "OsBundle:Situacao:index" }
+
+situacao_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "OsBundle:Situacao:show" }
+
+situacao_new:
+    pattern:  /new
+    defaults: { _controller: "OsBundle:Situacao:new" }
+
+situacao_create:
+    pattern:  /create
+    defaults: { _controller: "OsBundle:Situacao:create" }
+    requirements: { _method: post }
+
+situacao_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "OsBundle:Situacao:edit" }
+
+situacao_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "OsBundle:Situacao:update" }
+    requirements: { _method: post|put }
+
+situacao_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "OsBundle:Situacao:delete" }
+    requirements: { _method: post|delete }

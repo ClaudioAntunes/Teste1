@@ -1,0 +1,30 @@
+os:
+    pattern:  /
+    defaults: { _controller: "OsBundle:Os:index" }
+
+os_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "OsBundle:Os:show" }
+
+os_new:
+    pattern:  /new
+    defaults: { _controller: "OsBundle:Os:new" }
+
+os_create:
+    pattern:  /create
+    defaults: { _controller: "OsBundle:Os:create" }
+    requirements: { _method: post }
+
+os_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "OsBundle:Os:edit" }
+
+os_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "OsBundle:Os:update" }
+    requirements: { _method: post|put }
+
+os_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "OsBundle:Os:delete" }
+    requirements: { _method: post|delete }

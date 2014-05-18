@@ -1,0 +1,30 @@
+reparo:
+    pattern:  /
+    defaults: { _controller: "OsBundle:Reparo:index" }
+
+reparo_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "OsBundle:Reparo:show" }
+
+reparo_new:
+    pattern:  /new
+    defaults: { _controller: "OsBundle:Reparo:new" }
+
+reparo_create:
+    pattern:  /create
+    defaults: { _controller: "OsBundle:Reparo:create" }
+    requirements: { _method: post }
+
+reparo_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "OsBundle:Reparo:edit" }
+
+reparo_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "OsBundle:Reparo:update" }
+    requirements: { _method: post|put }
+
+reparo_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "OsBundle:Reparo:delete" }
+    requirements: { _method: post|delete }

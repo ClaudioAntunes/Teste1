@@ -1,0 +1,7 @@
+parameters:
+#    forte_os.example.class: Forte\OsBundle\Example
+
+services:
+#    forte_os.example:
+#        class: %forte_os.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

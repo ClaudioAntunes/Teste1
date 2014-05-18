@@ -1,0 +1,27 @@
+forte_os_homepage:
+    pattern:  /hello/{name}/{total}
+    defaults: { _controller: OsBundle:Default:index }
+
+OsBundle_admin_os:
+    resource: "@OsBundle/Resources/config/routing/os.yml"
+    prefix:   /os
+
+OsBundle_defeitos:
+    resource: "@OsBundle/Resources/config/routing/defeitos.yml"
+    prefix:   /defeitos
+    
+OsBundle_reparo:
+    resource:   "@OsBundle/Resources/config/routing/reparo.yml"
+    prefix: /reparo
+    
+OsBundle_situacao:
+    resource:   "@OsBundle/Resources/config/routing/situacao.yml"
+    prefix:     /situacao
+    
+OsBundle_tecnico:
+    resource:   "@OsBundle/Resources/config/routing/tecnico.yml"
+    prefix:     /tecnico
+    
+UserBundle_cliente:
+    resource:   "@UserBundle/Resources/config/routing/cliente.yml"
+    prefix:     /cliente

@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+    
+
+    {% for os in os %}
+        {{ os.id}}<br />
+        {{ os.cliente}}<br />
+        {{ os.produto}}<br />
+        {{ os.defeito}}<br />
+        {{ os.status}}<br />
+    {% endfor %}
+
+    {% for i in 1..total %}
+    Hello {{ name }}! | {{ total }} <br />
+    {% endfor %}
+
+{% endblock %}
+ 

@@ -1,0 +1,30 @@
+defeitos:
+    pattern:  /
+    defaults: { _controller: "OsBundle:Defeitos:index" }
+
+defeitos_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "OsBundle:Defeitos:show" }
+
+defeitos_new:
+    pattern:  /new
+    defaults: { _controller: "OsBundle:Defeitos:new" }
+
+defeitos_create:
+    pattern:  /create
+    defaults: { _controller: "OsBundle:Defeitos:create" }
+    requirements: { _method: post }
+
+defeitos_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "OsBundle:Defeitos:edit" }
+
+defeitos_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "OsBundle:Defeitos:update" }
+    requirements: { _method: post|put }
+
+defeitos_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "OsBundle:Defeitos:delete" }
+    requirements: { _method: post|delete }
