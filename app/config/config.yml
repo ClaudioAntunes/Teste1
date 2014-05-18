@@ -77,36 +77,3 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts:   [admin]
         # Your other blocks
-        
-        # Colocado para usar FOSUser junto com SONATA
-        #sonata.admin_doctrine_orm.block.audit:
-        #    contexts:   [admin]
-        #sonata.block.service.text:
-        #sonata.block.service.rss:
-        
-# Colocado para usar FOSUser junto com SONATA
-# Sonata intl configuration
-# sonata_intl:
-#    timezone:
-#        # default timezone used as fallback
-#        default: Europe/Paris
-# 
-## 
-        # locale specific overrides
- 
-#        locales:
-#            fr: Europe/Paris
-#            en_UK: Europe/London
-
-# Colocado para usar FOSUser junto com SONATA
-# Translator configuration
-#framework:
-#    translator: ~
-
-# FOS user bundle configuration
-fos_user:
-    db_driver: orm
-    firewall_name: main
-    user_class: Application\Sonata\UserBundle\Entity\User
-            
-            
