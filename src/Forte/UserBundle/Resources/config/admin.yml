@@ -1,0 +1,11 @@
+services:              
+    sonata.admin.cliente:
+        class: Forte\UserBundle\Admin\ClienteAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Cadastro de Clientes", label: "Clientes" }
+        arguments:
+            - ~
+            - Forte\UserBundle\Entity\Cliente
+            - ~
+        calls:
+            - [ setTranslationDomain, [ForteUserBundle]]             

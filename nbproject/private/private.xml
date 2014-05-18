@@ -5,8 +5,7 @@
         <group>
             <file>file:/C:/xampp/htdocs/TESTE/app/config/routing.yml</file>
             <file>file:/C:/xampp/htdocs/TESTE/app/config/config.yml</file>
-            <file>file:/C:/xampp/htdocs/TESTE/app/autoload.php</file>
-            <file>file:/C:/xampp/htdocs/TESTE/app/AppKernel.php</file>
+            <file>file:/C:/xampp/htdocs/TESTE/vendor/sonata-project/admin-bundle/Resources/views/standard_layout.html.twig</file>
         </group>
     </open-files>
 </project-private>
