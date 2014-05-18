@@ -62,3 +62,5 @@ _sonata_admin:
     sonata_user_impersonating:
        pattern: /
        defaults: { _controller: SonataPageBundle:Page:catchAll }
+       
+       
